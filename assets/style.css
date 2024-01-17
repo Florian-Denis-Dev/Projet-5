@@ -5,9 +5,21 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	font-size: large;
+}
+:root {
+	--spectral: 'Spectral', serif; 
+	--black: #000;
+	--white: white;
+	--light-orange: #F6D2B8;
+	--orange: #E5975F;
+	--light-green: #D8D3A8;
+	--green: #BEB45A;
+	--light-blue: #A8D5D8;
+	--blue: #1C6474;
 }
 .top-header {
-	background-color: white;
+	background-color: var(--white);
 	position: sticky;
 	top:0;
 	z-index: 1000;
@@ -35,7 +47,7 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
+	color: var(--black);
 }
 
 .social-link img {
@@ -44,7 +56,7 @@ body {
 
 #about {
 	display: flex;
-	background-color: #F6D2B8;
+	background-color: var(--light-orange);
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
@@ -52,7 +64,7 @@ body {
 
 .picture.left::before {
 	content: ' ';
-	background-color: #E5975F;
+	background-color: var(--orange);
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -80,8 +92,8 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
-	font-weight: 800;
+	font-family: var(--spectral);
+	font-weight: 600;
 	font-style: italic;
 	width: 60%;
 }
@@ -101,12 +113,12 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #000;
-	background-color: #BEB45A;
+	color: var(--black);
+	background-color: var(--green);
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: var(--black);
 }
 .item-column {
 	position: relative;
@@ -137,32 +149,32 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: var(--spectral);
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: 'Spectral';
+	font-family: var(--spectral);
 	font-style: italic;
 	font-weight: 300;
 
 }
 .quote__author {
-	font-family: 'Spectral';
+	font-family: var(--spectral);
 	font-weight: 800;
 	font-size: 22px;
 }
 
 #services {
 	margin: auto;
-	background-color: #A8D5D8 ;
+	background-color: var(--light-blue);
 	position: relative;
 }
 #services .container::before{
 	content: ' ';
-	background-color: #1C6474;
+	background-color: var(--blue);
 	position: absolute;
 	width: 100%;
 	height: 30%;
@@ -179,7 +191,7 @@ body {
 }
 
 .service {
-	background-color: white;
+	background-color: var(--white);
 	max-width: 390px;
 	width: 30%;
 	height: 337px;
@@ -192,7 +204,7 @@ body {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: var(--light-green) ;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -203,7 +215,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #BEB45A;
+	background-color: var(--green);
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -240,8 +252,16 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #BEB45A;
+	background-color: var(--green);
 	padding: .5em 1em
+}
+.active:hover {
+	cursor: pointer;
+}
+.carousel-control-next-icon {
+	border-radius: 50%;
+	background-color: var(--blue);
+	margin: 1rem;
 }
 
 @media all and (max-width: 1180px) {
