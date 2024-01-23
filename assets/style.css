@@ -258,9 +258,9 @@ input[type="submit"] {
 .active:hover {
 	cursor: pointer;
 }
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
 	border-radius: 50%;
-	background-color: var(--blue);
+	background-color: var(--black);
 	margin: 1rem;
 }
 
